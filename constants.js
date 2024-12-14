@@ -20,7 +20,7 @@ if (HEIGHT > window.innerHeight) {
 }
 
 const DIAMETER = 40;    // Storm icon diameter
-const PERLIN_ZOOM = 100;    // Resolution for perlin noise
+const PERLIN_ZOOM = 200;    // Resolution for perlin noise
 const TICK_DURATION = 3600000;  // How long in sim time does a tick last in milliseconds (1 hour)
 const ADVISORY_TICKS = 6;    // Number of ticks per advisory
 const YEAR_LENGTH = 365.2425*24;        // The length of a year in ticks; used for seasonal activity
