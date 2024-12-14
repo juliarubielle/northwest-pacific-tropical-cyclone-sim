@@ -1,3 +1,9 @@
+let Montserrat;
+
+function preload() {
+	Montserrat = loadFont('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+}
+
 const TITLE = "Northwest Pacific Tropical Cyclone Simulator";
 const VERSION_NUMBER = "0.1";
 
