@@ -464,13 +464,13 @@ Scale.wederyEnhancedSaffirSimpson = new Scale({
         {
             threshold: 113,
             color: '$C4',
-            symbol: '4LO',
+            symbol: '4-',
             cName: 'Category 4 Low'
         },
         {
             threshold: 130,
             color: '$C4',
-            symbol: '4HI',
+            symbol: '4+',
             stormNom: ['Major Hurricane','Super Typhoon','Cyclone'],
             stat: [undefined,'Category 4 High Super Typhoons'],
             cName: 'Category 4 High STY'
@@ -478,14 +478,14 @@ Scale.wederyEnhancedSaffirSimpson = new Scale({
         {
             threshold: 137,
             color: '$C5',
-            symbol: '5LO',
+            symbol: '5-',
             stat: [undefined,'Category 5 Low Super Typhoons'],
             cName: 'Category 5 Low STY'
         },
         {
             threshold: 155,
             color: '$HYC',
-            symbol: '5HI',
+            symbol: '5+',
             stat: [undefined,'Category 5 High Super Typhoons'],
             cName: 'Category 5 High STY'
         }
@@ -788,7 +788,7 @@ const COLOR_SCHEMES = [
         values: {
             'TDi': 'rgb(75,75,245)',
             'SDi': 'rgb(95,95,235)',
-            'TD': 'rgb(20,20,230)',
+            'TD': 'rgb(0,128,255)',
             'SD': 'rgb(60,60,220)',
             'TS': 'rgb(20,230,20)',
             'SS': 'rgb(60,220,60)',
