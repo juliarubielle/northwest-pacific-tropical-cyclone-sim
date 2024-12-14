@@ -6,8 +6,8 @@ const EARLIEST_COMPATIBLE_FORMAT = 0;
 const ENVDATA_COMPATIBLE_FORMAT = 0;
 
 const Montserrat = loadFont('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-const WIDTH = window.innerWidth; // 16:9 aspect ratio... not anymore!
-const HEIGHT = window.innerHeight;
+const WIDTH = 1600; // 16:9 aspect ratio... again!
+const HEIGHT = 900;
 const DIAMETER = 20;    // Storm icon diameter
 const PERLIN_ZOOM = 100;    // Resolution for perlin noise
 const TICK_DURATION = 3600000;  // How long in sim time does a tick last in milliseconds (1 hour)
