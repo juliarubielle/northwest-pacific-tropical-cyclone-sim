@@ -460,7 +460,7 @@ UI.init = function(){
         text(TITLE,0,0);
         textSize(18);
         textStyle(ITALIC);
-        text("Simulate NWPAC storms. Original by Monsoonjr99 and original WPAC mode by Wilburthecoder!",0,40);
+        text("Simulate NWPAC storms. Original by Monsoonjr99 and original WPAC mode by Wilburthecoder. Code edited by both Astradia and wedery. Credit to all 3!",0,40);
     });
 
     mainMenu.append(false,WIDTH/2-100,HEIGHT/2-20,200,40,function(s){    // "New Basin" button
