@@ -13,7 +13,7 @@ if (HEIGHT > window.innerHeight) {
     WIDTH = HEIGHT * (16 / 9);
 }
 
-const DIAMETER = 20;    // Storm icon diameter
+const DIAMETER = 40;    // Storm icon diameter
 const PERLIN_ZOOM = 100;    // Resolution for perlin noise
 const TICK_DURATION = 3600000;  // How long in sim time does a tick last in milliseconds (1 hour)
 const ADVISORY_TICKS = 6;    // Number of ticks per advisory
