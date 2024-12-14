@@ -246,7 +246,7 @@ class Storm{
                 stormIcons.noFill();
                 stormIcons.stroke(255);
                 if(ty===EXTROP){
-                    stormIcons.textSize(18);
+                    stormIcons.textSize(36);
                     stormIcons.text("L",0,0);
                 }else stormIcons.ellipse(0,0,DIAMETER);
                 drawArms();
@@ -257,10 +257,10 @@ class Storm{
             drawArms();
             if(ty===EXTROP){
                 stormIcons.fill(COLORS.storm.extL);
-                stormIcons.textSize(18);
+                stormIcons.textSize(36);
             }else{
                 stormIcons.fill(brightness(scaleIconData.color)<75 ? 240 : 0);
-                stormIcons.textSize(12);
+                stormIcons.textSize(24);
             }
             stormIcons.textStyle(NORMAL);
             stormIcons.text(tropOrSub(ty) ? scaleIconData.symbol : "L", 0, 0);
@@ -271,7 +271,7 @@ class Storm{
             }
             if(name){
                 stormIcons.textAlign(LEFT,CENTER);
-                stormIcons.textSize(14);
+                stormIcons.textSize(28);
                 stormIcons.text(name,DIAMETER,0);
             }
             stormIcons.pop();
