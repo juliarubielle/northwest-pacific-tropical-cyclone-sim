@@ -127,7 +127,7 @@ const MAP_TYPES = [     // Land generation controls and option presets for diffe
         }
     },
     {   
-		label: "Atlantic",
+		label: "Northern Atlantic",
         form: 'earth',
         west: -102.67,
         east: 3,
@@ -141,7 +141,7 @@ const MAP_TYPES = [     // Land generation controls and option presets for diffe
         }
     },
     {   
-		label: "Eastern Pacific",
+		label: "Northeastern Pacific",
         form: 'earth',
         west: -180,
         east: -74.33,
@@ -197,7 +197,7 @@ const MAP_TYPES = [     // Land generation controls and option presets for diffe
         }
     },
     {   
-		label: "South Pacific",
+		label: "Southwest Pacific",
         form: 'earth',
         west: 147.2,
         east: -107.13,
@@ -225,7 +225,7 @@ const MAP_TYPES = [     // Land generation controls and option presets for diffe
         }
     },
     {   
-		label: "South Atlantic",
+		label: "Southern Atlantic",
         form: 'earth',
         west: -81.48,
         east: 24.19,
