@@ -5,7 +5,6 @@ const SAVE_FORMAT = 7;  // Format #7 in use starting in v0.4
 const EARLIEST_COMPATIBLE_FORMAT = 0;
 const ENVDATA_COMPATIBLE_FORMAT = 0;
 
-const Montserrat = loadFont('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 const WIDTH = 1600; // 16:9 aspect ratio... again!
 const HEIGHT = 900;
 const DIAMETER = 20;    // Storm icon diameter
