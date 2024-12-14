@@ -680,10 +680,99 @@ Scale.southwestIndianOcean = new Scale({
         }
     ]
 });
+Scale.wederyEnhancedSaffirSimpson = new Scale({
+    displayName: 'wedery Enhanced Saffir-Simpson',
+    flavorDisplayNames: ['Hurricane','Typhoon','Cyclone'],
+    classifications: [
+        {
+            threshold: 0,
+            color: '$TD',
+            subtropicalColor: '$SD',
+            symbol: 'D',
+            arms: 0,
+            stormNom: 'Tropical Depression',
+            subtropicalStormNom: 'Subtropical Depression',
+            stat: 'Depressions',
+            cName: 'Depression'
+        },
+        {
+            threshold: 34,
+            color: '$TS',
+            subtropicalColor: '$SS',
+            symbol: 'S',
+            stormNom: 'Tropical Storm',
+            subtropicalStormNom: 'Subtropical Storm',
+            stat: 'Named Storms',
+            cName: 'Storm'
+        },
+        {
+            threshold: 48,
+            color: '$STS',
+            subtropicalColor: '$SSS',
+            symbol: 'STS',
+            subtropicalSymbol: 'SSS',
+            stormNom: 'Severe Tropical Storm',
+            subtropicalStormNom: 'Severe Subtropical Storm',
+            stat: 'Severe',
+            cName: 'Severe'
+        },
+        {
+            threshold: 64,
+            color: '$C1',
+            symbol: '1',
+            stormNom: ['Hurricane','Typhoon','Cyclone'],
+            stat: ['Hurricanes','Typhoons','Cyclones'],
+            cName: 'Category 1'
+        },
+        {
+            threshold: 83,
+            color: '$C2',
+            symbol: '2',
+            cName: 'Category 2'
+        },
+        {
+            threshold: 96,
+            color: '$C3',
+            symbol: '3',
+            stormNom: ['Major Hurricane','Typhoon','Cyclone'],
+            stat: ['Major Hurricanes','Category 3+','Category 3+'],
+            cName: 'Category 3'
+        },
+        {
+            threshold: 113,
+            color: '$C4',
+            symbol: '4-',
+            cName: 'Category 4 Low'
+        },
+        {
+            threshold: 130,
+            color: '$C4',
+            symbol: '4+',
+            stormNom: ['Major Hurricane','Super Typhoon','Cyclone'],
+            stat: [undefined,'Category 4 High Super Typhoons'],
+            cName: 'Category 4 High STY'
+        },
+        {
+            threshold: 137,
+            color: '$C5',
+            symbol: '5-',
+            stat: [undefined,'Category 5 Low Super Typhoons'],
+            cName: 'Category 5 Low STY'
+        }
+        {
+            threshold: 155,
+            color: '$C5',
+            symbol: '5+',
+            stat: [undefined,'Category 5 High Super Typhoons'],
+            cName: 'Category 5 High STY'
+        }
+    ]
+});
 
 Scale.presetScales = [
     Scale.saffirSimpson,
     Scale.extendedSaffirSimpson,
+    Scale.wederyEnhancedSaffirSimpson,
     Scale.australian,
     Scale.JMA,
     Scale.IMD,
