@@ -5,6 +5,7 @@ v0.4.21_1.0 (2024-12-15)
     + Added wedery Enhanced Saffir-Simpson Scale
     * Display resolution is now dynamic to device display
     * Changed terms for consistency
+    * Changed tropical depression color for the classic scheme
 v0.4.21 (2024-10-31):
     + Added "Spooky" simulation mode
         > Season peaks at the end of October and is notably explosive
