@@ -1,4 +1,4 @@
-const TITLE = "Supertyphoon Simulator";
+const TITLE = "Super Tropical Cyclone Simulator";
 const VERSION_NUMBER = "0.1";
 
 const SAVE_FORMAT = 7;  // Format #7 in use starting in v0.4
@@ -155,7 +155,7 @@ const MAP_TYPES = [     // Land generation controls and option presets for diffe
         }
     },
     {   
-		label: "Western Pacific",
+		label: "Northwestern Pacific",
         form: 'earth',
         west: 94.42,
         east: -159.91,
