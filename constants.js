@@ -1,4 +1,4 @@
-const TITLE = "Super Tropical Cyclone Simulator";
+const TITLE = "Northwest Pacific Tropical Cyclone Simulator";
 const VERSION_NUMBER = "0.1";
 
 const SAVE_FORMAT = 7;  // Format #7 in use starting in v0.4
