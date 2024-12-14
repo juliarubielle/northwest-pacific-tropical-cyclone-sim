@@ -266,12 +266,12 @@ class Storm{
             stormIcons.text(tropOrSub(ty) ? scaleIconData.symbol : "L", 0, 0);
             stormIcons.fill(0);
             if(simSettings.showStrength){
-                stormIcons.textSize(10);
+                stormIcons.textSize(20);
                 stormIcons.text(`${displayWindspeed(floor(st), 1)}\n${floor(pr)} hPa`, 0, DIAMETER + 5);
             }
             if(name){
                 stormIcons.textAlign(LEFT,CENTER);
-                stormIcons.textSize(28);
+                stormIcons.textSize(20);
                 stormIcons.text(name,DIAMETER,0);
             }
             stormIcons.pop();
