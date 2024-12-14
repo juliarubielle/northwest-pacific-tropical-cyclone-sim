@@ -1,10 +1,10 @@
 body{
-	background: #BBB;
-	background: -o-linear-gradient(#BBB,#F3F3F3);
-	background: -webkit-linear-gradient(#BBB,#F3F3F3);
-	background: -moz-linear-gradient(#BBB,#F3F3F3);
-	background: linear-gradient(#BBB,#F3F3F3);
-	font-family: Calibri, Arial;
+	background: #444;
+	background: -o-linear-gradient(#0d0d0d,#0d0d0d);
+	background: -webkit-linear-gradient(#0d0d0d,#0d0d0d);
+	background: -moz-linear-gradient(#0d0d0d,#0d0d0d);
+	background: linear-gradient(#0d0d0d,#0d0d0d);
+	font-family: 'Arial' sans-serif;
 }
 
 a{

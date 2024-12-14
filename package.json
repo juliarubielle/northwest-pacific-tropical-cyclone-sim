@@ -1,0 +1,11 @@
+{
+  "name": "cyclone-sim",
+  "version": "1.0.0",
+  "description": "Cyclone Simulator",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}
