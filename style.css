@@ -15,7 +15,7 @@ body {
 a {
 	display: inline-block;
 	text-decoration: none;
-	color: blue;
+	color: black;
 }
 
 #version {
@@ -40,7 +40,7 @@ a:after {
 }
 
 a:hover, a#version:hover {
-	color: black;
+	color: #0080ff;
 	transform-origin: 50% 50%;
 }
 
