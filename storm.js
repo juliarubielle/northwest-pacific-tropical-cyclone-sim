@@ -240,6 +240,7 @@ class Storm{
             };
             stormIcons.push();
             stormIcons.translate(pos.x,pos.y);
+            stormIcons.textFont('Montserrat');
             stormIcons.textAlign(CENTER,CENTER);
             if(selectedStorm===this){
                 stormIcons.noFill();
