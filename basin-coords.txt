@@ -1,16 +1,16 @@
 Longitude-latitude coordinates of basin maps' boundaries:
 
-Atlantic
+North Atlantic
     west    -102.67
     east       3.00
     north     59.45
     south      0.00
-Eastern Pacific
+Northeast Pacific
     west    -180.00
     east     -74.33
     north     59.45
     south      0.00
-Western Pacific
+Northwest Pacific
     west      94.42
     east    -159.91
     north     59.45
@@ -20,7 +20,7 @@ North Indian Ocean
     east     131.62
     north     59.45
     south      0.00
-South-Western Indian Ocean
+South-West Indian Ocean
     west      17.25
     east     122.93
     north      0.00
@@ -30,7 +30,7 @@ Australian Region
     east    -172.29
     north      0.00
     south    -59.45
-South Pacific
+Southwest Pacific
     west     147.20
     east    -107.13
     north      0.00
