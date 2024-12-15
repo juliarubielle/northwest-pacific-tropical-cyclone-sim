@@ -29,6 +29,7 @@ var paused,
     seasonCurve;
 
 function setup(){
+    textFont('Montserrat');
     setVersion(TITLE + " v",VERSION_NUMBER);
     document.title = TITLE;
 
