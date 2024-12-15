@@ -470,7 +470,7 @@ Scale.wederyEnhancedSaffirSimpson = new Scale({
             cName: 'Category 4 Low'
         },
         {
-            threshold: 130,
+            threshold: 125,
             color: '$C4HI',
             symbol: '4+',
             stormNom: ['Super Hurricane','Super Typhoon','Super Cyclone'],
