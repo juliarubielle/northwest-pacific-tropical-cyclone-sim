@@ -5,6 +5,7 @@ body {
 	background: -moz-linear-gradient(#0d0d0d,#0d0d0d);
 	background: linear-gradient(#0d0d0d,#0d0d0d);
 	font-family: 'Montserrat' sans-serif;
+	height: 100%;
 	margin: 0;
 	display: flex;
 	justify-content: center;
