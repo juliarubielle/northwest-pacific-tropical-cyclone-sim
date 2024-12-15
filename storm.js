@@ -246,7 +246,7 @@ class Storm{
                 stormIcons.noFill();
                 stormIcons.stroke(255);
                 if(ty===EXTROP){
-                    stormIcons.textSize(36);
+                    stormIcons.textSize(18);
                     stormIcons.text("L",0,0);
                 }else stormIcons.ellipse(0,0,DIAMETER);
                 drawArms();
@@ -257,21 +257,21 @@ class Storm{
             drawArms();
             if(ty===EXTROP){
                 stormIcons.fill(COLORS.storm.extL);
-                stormIcons.textSize(36);
+                stormIcons.textSize(18);
             }else{
                 stormIcons.fill(brightness(scaleIconData.color)<75 ? 240 : 0);
-                stormIcons.textSize(24);
+                stormIcons.textSize(12);
             }
             stormIcons.textStyle(NORMAL);
             stormIcons.text(tropOrSub(ty) ? scaleIconData.symbol : "L", 0, 0);
             stormIcons.fill(0);
             if(simSettings.showStrength){
-                stormIcons.textSize(20);
+                stormIcons.textSize(10);
                 stormIcons.text(`${displayWindspeed(floor(st), 1)}\n${floor(pr)} hPa`, 0, DIAMETER + 5);
             }
             if(name){
                 stormIcons.textAlign(LEFT,CENTER);
-                stormIcons.textSize(26);
+                stormIcons.textSize(14);
                 stormIcons.text(name,DIAMETER,0);
             }
             stormIcons.pop();
