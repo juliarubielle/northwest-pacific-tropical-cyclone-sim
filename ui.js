@@ -1501,20 +1501,16 @@ UI.init = function(){
                 sName = selectedStorm.getFullNameByTick("peak");
                 txtStr = sName + " - ACE: " + selectedStorm.ACE;
             }
-        }else{
-            if(paused)
-                txtStr = "Paused";
-            else if(simSpeed < -1)
-                txtStr = `1/${Math.pow(2, -simSpeed)} Speed`;
-            else if(simSpeed === -1)
-                txtStr = 'Half-Speed';
-            else if(simSpeed === 0)
-                txtStr = 'Normal-Speed';
-            else if(simSpeed === 1)
-                txtStr = 'Double-Speed';
-            else
-                txtStr = `${Math.pow(2, simSpeed)}x Speed`;
-        }
+	}else{
+	    if(paused)
+	        txtStr = "Paused";
+	    else if(simSpeed < 0)
+	        txtStr = `${(1 / Math.pow(2, -simSpeed))}x Speed`;
+	    else if(simSpeed === 0)
+	        txtStr = '1x Speed';
+	    else
+	        txtStr = `${Math.pow(2, simSpeed)}x Speed`;
+	}
         let newW = textWidth(txtStr)+6;
         this.setBox(-newW-5,undefined,newW);
         if(this.isHovered()){
