@@ -453,7 +453,6 @@ UI.init = function(){
     mainMenu.append(false,WIDTH/2,HEIGHT/4,0,0,function(s){  // title text
         fill(COLORS.UI.text);
         noStroke();
-
         textAlign(CENTER,CENTER);
         textSize(36);
         text(TITLE,0,0);
@@ -490,7 +489,6 @@ UI.init = function(){
     basinCreationMenu.append(false,WIDTH/2,HEIGHT/16,0,0,function(s){ // menu title text
         fill(COLORS.UI.text);
         noStroke();
-
         textAlign(CENTER,CENTER);
         textSize(36);
         text("New Basin Settings",0,0);
@@ -531,7 +529,6 @@ UI.init = function(){
         }
         textAlign(LEFT,CENTER);
         let fontSize = 18;
-
         textSize(fontSize);
         while(textWidth(yName)>this.width-10 && fontSize>8){
             fontSize--;
@@ -642,7 +639,6 @@ UI.init = function(){
     basinCreationMenuAdvanced.append(false,WIDTH/2,HEIGHT/16,0,0,function(s){ // menu title text
         fill(COLORS.UI.text);
         noStroke();
-
         textAlign(CENTER,CENTER);
         textSize(36);
         text("New Basin Settings (Advanced)",0,0);
@@ -714,7 +710,6 @@ UI.init = function(){
     loadMenu.append(false,WIDTH/2,HEIGHT/8,0,0,function(s){ // menu title text
         fill(COLORS.UI.text);
         noStroke();
-
         textAlign(CENTER,CENTER);
         textSize(36);
         text("Load Basin",0,0);
@@ -836,7 +831,6 @@ UI.init = function(){
     settingsMenu.append(false,WIDTH/2,HEIGHT/8,0,0,function(s){ // menu title text
         fill(COLORS.UI.text);
         noStroke();
-
         textAlign(CENTER,CENTER);
         textSize(36);
         text("Settings",0,0);
@@ -910,7 +904,6 @@ UI.init = function(){
     areYouSure.append(false,WIDTH/2,HEIGHT/4,0,0,function(s){ // dialog text
         fill(COLORS.UI.text);
         noStroke();
-
         textAlign(CENTER,CENTER);
         textSize(36);
         text("Are You Sure?",0,0);
@@ -1337,7 +1330,6 @@ UI.init = function(){
         fill(COLORS.UI.bar);
         noStroke();
         s.fullRect();
-
         textSize(18);
     },false);
 
@@ -1364,7 +1356,6 @@ UI.init = function(){
         noStroke();
         s.fullRect();
         fill(COLORS.UI.text);
-
         textAlign(LEFT,TOP);
         textSize(15);
         text('Y:',15,53);
@@ -1528,7 +1519,6 @@ UI.init = function(){
         fill(COLORS.UI.bar);
         noStroke();
         s.fullRect();
-
         textSize(18);
     },false);
 
@@ -1629,7 +1619,6 @@ UI.init = function(){
         noStroke();
         s.fullRect();
         fill(COLORS.UI.text);
-
         textAlign(CENTER,TOP);
         textSize(18);
         const txt_width = 7*this.width/8;
@@ -1908,7 +1897,6 @@ UI.init = function(){
                         }
                         let rowFits;
                         part.row = -1;
-		
                         textSize(12);
                         let thisLabelZone = textWidth(part.label) + 6;
                         do{
@@ -2000,7 +1988,6 @@ UI.init = function(){
                 stroke(COLORS.UI.text);
                 line(lBound,bBound,rBound,bBound);
                 line(rBound,bBound,rBound,tBound);
-	
                 textSize(13);
                 fill(COLORS.UI.text);
                 for(let m = UI.viewBasin.tickMoment(begin_tick).startOf('day'); UI.viewBasin.tickFromMoment(m) <= end_tick; m.add(1, 'd')){
@@ -2046,7 +2033,6 @@ UI.init = function(){
                 stroke(COLORS.UI.text);
                 line(lBound,bBound,rBound,bBound);
                 line(lBound,bBound,lBound,tBound);
-	
                 textSize(13);
                 let M = ['J','F','M','A','M','J','J','A','S','O','N','D'];
                 for(let i=0;i<months;i++){
@@ -2084,7 +2070,6 @@ UI.init = function(){
                 let y = tBound+(p.row % maxRowFit)*15;
                 let mx = getMouseX()-this.getX();
                 let my = getMouseY()-this.getY();
-	
                 textSize(12);
                 if(mx>=lBound+p.segments[0].startX && mx<lBound+p.segments[p.segments.length-1].endX+textWidth(p.label)+6 && my>=y && my<y+10){
                     newTarget = p.storm;
@@ -2148,7 +2133,6 @@ UI.init = function(){
         s.fullRect();
         fill(COLORS.UI.text);
         textAlign(CENTER,TOP);
-
         textSize(18);
         text("Menu",this.width/2,10);
     },true,false);
@@ -2200,7 +2184,6 @@ UI.init = function(){
         noStroke();
         s.fullRect();
         fill(COLORS.UI.text);
-
         textAlign(CENTER,TOP);
         textSize(18);
         text("Save Basin As...",this.width/2,10);
@@ -2256,7 +2239,6 @@ UI.init = function(){
         noStroke();
         s.fullRect();
         fill(COLORS.UI.text);
-
         textAlign(LEFT,TOP);
         textSize(15);
         text(HELP_TEXT,10,10);
