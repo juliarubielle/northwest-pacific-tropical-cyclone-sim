@@ -459,7 +459,7 @@ Scale.wederyEnhancedSaffirSimpson = new Scale({
             color: '$C3',
             symbol: '3',
             stormNom: ['Severe Hurricane','Severe Typhoon','Severe Cyclone'],
-            stat: ['Major Hurricanes','Category 3+','Category 3+'],
+            stat: [undefined,'Category 3+'],
             cName: 'Category 3'
         },
         {
@@ -474,7 +474,7 @@ Scale.wederyEnhancedSaffirSimpson = new Scale({
             color: '$C4HI',
             symbol: '4+',
             stormNom: ['Super Hurricane','Super Typhoon','Super Cyclone'],
-            stat: 'Category 4 High+',
+            stat: [undefined,'Category 4 High+'],
             cName: 'Category 4 High STY'
         },
         {
