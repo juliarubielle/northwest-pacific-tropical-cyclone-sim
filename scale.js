@@ -443,7 +443,7 @@ Scale.wederyEnhancedSaffirSimpson = new Scale({
             threshold: 64,
             color: '$C1',
             symbol: '1',
-            stormNom: ['Hurricane','Typhoon','Cyclone'],
+            stormNom: ['Moderate Hurricane','Moderate Typhoon','Moderate Cyclone'],
             stat: ['Hurricanes','Typhoons','Cyclones'],
             cName: 'Category 1'
         },
@@ -451,13 +451,14 @@ Scale.wederyEnhancedSaffirSimpson = new Scale({
             threshold: 83,
             color: '$C2',
             symbol: '2',
+            stormNom: ['Intense Hurricane','Intense Typhoon','Intense Cyclone'],
             cName: 'Category 2'
         },
         {
             threshold: 96,
             color: '$C3',
             symbol: '3',
-            stormNom: ['Major Hurricane','Typhoon','Cyclone'],
+            stormNom: ['Severe Hurricane','Severe Typhoon','Severe Cyclone'],
             stat: ['Major Hurricanes','Category 3+','Category 3+'],
             cName: 'Category 3'
         },
@@ -465,29 +466,32 @@ Scale.wederyEnhancedSaffirSimpson = new Scale({
             threshold: 113,
             color: '$C4',
             symbol: '4-',
+            stormNom: ['Vicious Hurricane','Vicious Typhoon','Vicious Cyclone'],
             cName: 'Category 4 Low'
         },
         {
             threshold: 130,
             color: '$C4',
             symbol: '4+',
-            stormNom: ['Major Hurricane','Super Typhoon','Cyclone'],
-            stat: [undefined,'Category 4 High Super Typhoons'],
+            stormNom: ['Super Hurricane','Super Typhoon','Super Cyclone'],
+            stat: 'Category 4 High+',
             cName: 'Category 4 High STY'
         },
         {
             threshold: 137,
             color: '$C5',
             symbol: '5-',
-            stat: [undefined,'Category 5 Low Super Typhoons'],
-            cName: 'Category 5 Low STY'
+            stormNom: ['Violent Hurricane','Violent Typhoon','Violent Cyclone'],
+            stat: [undefined,'Category 5 Low+'],
+            cName: 'Category 5 Low VTY'
         },
         {
             threshold: 155,
             color: '$HYC',
             symbol: '5+',
-            stat: [undefined,'Category 5 High Super Typhoons'],
-            cName: 'Category 5 High STY'
+            stormNom: ['Extreme Hurricane','Extreme Typhoon','Extreme Cyclone'],
+            stat: [undefined,'Category 5 High+'],
+            cName: 'Category 5 High ETY'
         }
     ]
 });
@@ -786,27 +790,57 @@ const COLOR_SCHEMES = [
     {
         name: 'Classic',
         values: {
-            'TDi': 'rgb(75,75,245)',
-            'SDi': 'rgb(95,95,235)',
-            'TD': 'rgb(0,128,255)',
-            'SD': 'rgb(60,60,220)',
-            'TS': 'rgb(20,230,20)',
-            'SS': 'rgb(60,220,60)',
-            'STS': 'rgb(180,230,20)',
-            'SSS': 'rgb(180,220,85)',
-            'TY': 'rgb(230,230,20)',
-            'VSTY': 'rgb(240,20,20)',
-            'C1': 'rgb(230,230,20)',
-            'C2': 'rgb(240,170,20)',
-            'C3': 'rgb(240,20,20)',
-            'C4': 'rgb(250,40,250)',
-            'C5': 'rgb(250,140,250)',
-            'C6': 'rgb(250,200,250)',
-            'C7': 'rgb(240,90,90)',
-            'C8': 'rgb(190,60,60)',
-            'C9': 'rgb(130,10,10)',
-            'C10': 'rgb(120,10,120)',
-            'HYC': 'rgb(20,0,140)'
+            "TDi": "#4b4bf5",
+            "SDi": "#5f5feb",
+            "TD": "#0040ff",
+            "SD": "#3c3cdc",
+            "TS": "#14e614",
+            "SS": "#3cdc3c",
+            "STS": "#b4e614",
+            "SSS": "#b4dc55",
+            "TY": "#e6e614",
+            "VSTY": "#f01414",
+            "C1": "#e6e614",
+            "C2": "#f0aa14",
+            "C3": "#f01414",
+            "C4": "#fa28fa",
+            "C4HI": "#fa28fa",
+            "C5": "#fa8cfa",
+            "C5HI": "#fa8cfa",
+            "C6": "#fac8fa",
+            "C7": "#f05a5a",
+            "C8": "#be3c3c",
+            "C9": "#820a0a",
+            "C10": "#780a78",
+            "HYC": "#14008c"
+        }
+    },
+        {
+        name: 'wedery',
+        values: {
+            'TDi': '#808080',
+            'SDi': '#808080',
+            'TD': '#0080ff',
+            'SD': '#0080ff',
+            'TS': '#30da30',
+            'SS': '#30da30',
+            'STS': '#80da80',
+            'SSS': '#80da80',
+            'TY': '#eeee30',
+            'VSTY': '#da3030',
+            'C1': '#eeee30',
+            'C2': '#ee8040',
+            'C3': '#da3030',
+            'C4': '#da00ad',
+            'C4HI': '#ad00da',
+            'C5': '#6000da',
+            'C5HI': '#202020',
+            'C6': '#202020',
+            'C7': '#202020',
+            'C8': '#202020',
+            'C9': '#202020',
+            'C10': '#202020',
+            'HYC': '#202020'
         }
     },
     {
@@ -826,7 +860,9 @@ const COLOR_SCHEMES = [
             'C2': '#FFD98C',
             'C3': '#FF9E59',
             'C4': '#FF738A',
-            'C5': '#A188FC',     
+            'C4HI': '#FF738A',
+            'C5': '#A188FC',
+            'C5HI': '#A188FC',
             'C6': '#A188FC',
             'C7': '#A188FC',
             'C8': '#A188FC',
@@ -852,7 +888,9 @@ const COLOR_SCHEMES = [
             'C2': '#ffe775',
             'C3': '#ffc140',
             'C4': '#ff8f20',
+            'C4HI': '#ff8f20',
             'C5': '#ff6060',
+            'C5HI': '#ff6060',
             'C6': '#8b0000',
             'C7': '#cc0033',
             'C8': '#cc0066',
