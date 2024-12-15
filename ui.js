@@ -81,7 +81,6 @@ class UI{
             }
             if(grey) fill(COLORS.UI.greyText);
             else fill(COLORS.UI.text);
-	    textFont('Montserrat');
             textAlign(CENTER,CENTER);
             textSize(size || 18);
             text(txt,this.width/2,this.height/2);
@@ -1034,7 +1033,6 @@ UI.init = function(){
         desigSystemEditor.append(false,WIDTH/2,HEIGHT/16,0,0,s=>{
             fill(COLORS.UI.text);
             noStroke();
-	    textFont('Montserrat');
             textAlign(CENTER,CENTER);
             textSize(36);
             text("Designations Editor",0,0);
@@ -1046,7 +1044,6 @@ UI.init = function(){
             let sb = UI.viewBasin.subBasins[editing_sub_basin];
             if(sb instanceof SubBasin)
                 txt += sb.getDisplayName();
-	    textFont('Montserrat');
             textAlign(CENTER,CENTER);
             textSize(18);
             text(txt,section_width/2,section_heights/2);
@@ -1305,7 +1302,6 @@ UI.init = function(){
         name_editor.append(false,WIDTH/2,HEIGHT/4,0,0,s=>{
             fill(COLORS.UI.text);
             noStroke();
-	    textFont('Montserrat');
             textAlign(CENTER,CENTER);
             textSize(24);
             text("Add/Edit Name",0,0);
@@ -1656,7 +1652,6 @@ UI.init = function(){
             name = wrapText(name, txt_width);
             text(name, this.width/2, txt_y);
             txt_y += countTextLines(name)*textLeading();
-	    textFont('Montserrat');
             textSize(15);
             let right_txt = '';
             if(S.inBasinTC){
@@ -1700,7 +1695,6 @@ UI.init = function(){
             name = wrapText(name, txt_width);
             text(name, this.width/2, txt_y);
             txt_y += countTextLines(name)*textLeading();
-	    textFont('Montserrat');
             textSize(15);
             let se = UI.viewBasin.fetchSeason(S);
             if(se instanceof Season){
@@ -1967,7 +1961,6 @@ UI.init = function(){
             noStroke();
             s.fullRect();
             fill(COLORS.UI.text);
-	    textFont('Montserrat');
             textAlign(CENTER,TOP);
             textSize(18);
             if(target === undefined)
@@ -2070,7 +2063,6 @@ UI.init = function(){
                     let y = tBound+(p.row % maxRowFit)*15;
                     let mx = getMouseX()-this.getX();
                     let my = getMouseY()-this.getY();
-		    textFont('Montserrat');
                     textSize(12);
                     if(mx>=lBound+p.segments[0].startX && mx<lBound+p.segments[p.segments.length-1].endX+textWidth(p.label)+6 && my>=y && my<y+10) stroke(255);
                     else noStroke();
