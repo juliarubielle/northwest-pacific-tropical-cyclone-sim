@@ -1,4 +1,4 @@
-body{
+body {
 	background: #444;
 	background: -o-linear-gradient(#0d0d0d,#0d0d0d);
 	background: -webkit-linear-gradient(#0d0d0d,#0d0d0d);
@@ -10,13 +10,18 @@ body{
 	justify-content: center;
 }
 
-a{
+canvas {
+	width: 100%;
+	height: 100%;
+}
+
+a {
 	display: inline-block;
 	text-decoration: none;
 	color: blue;
 }
 
-#version{
+#version {
 	position: fixed;
 	bottom: 0px;
 	right: 0px;
@@ -29,7 +34,7 @@ a{
 	-ms-user-select: none;
 }
 
-a:after{
+a:after {
 	display: block;
 	content: '';
 	border-bottom: solid 1px black;
@@ -37,16 +42,16 @@ a:after{
 	transition: transform 300ms;
 }
 
-a:hover, a#version:hover{
+a:hover, a#version:hover {
 	color: black;
 	transform-origin: 50% 50%;
 }
 
-a:hover:after{
+a:hover:after {
 	transform: scaleX(1);
 }
 
-ul{
+ul {
 	list-style: none;
 	text-align: center;
 }
