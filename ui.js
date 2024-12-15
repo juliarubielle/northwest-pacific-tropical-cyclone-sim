@@ -1506,8 +1506,6 @@ UI.init = function(){
 	        txtStr = "Paused";
 	    else if(simSpeed < 0)
 	        txtStr = `${(1 / Math.pow(2, -simSpeed))}x Speed`;
-	    else if(simSpeed === 0)
-	        txtStr = '1x Speed';
 	    else
 	        txtStr = `${Math.pow(2, simSpeed)}x Speed`;
 	}
