@@ -412,7 +412,7 @@ class DesignationSystem{
 }
 
 DesignationSystem.atlantic = new DesignationSystem({
-    displayName: 'Atlantic',
+    displayName: 'North Atlantic',
     suffix: 'L',
     annual: true,
     anchor: 1979,
@@ -430,7 +430,7 @@ DesignationSystem.atlantic = new DesignationSystem({
 });
 
 DesignationSystem.easternPacific = new DesignationSystem({
-    displayName: 'Eastern Pacific',
+    displayName: 'Northeastern Pacific',
     suffix: 'E',
     annual: true,
     anchor: 1979,
@@ -448,7 +448,7 @@ DesignationSystem.easternPacific = new DesignationSystem({
 });
 
 DesignationSystem.centralPacific = new DesignationSystem({
-    displayName: 'Central Pacific',
+    displayName: 'North Central Pacific',
     suffix: 'C',
     mainLists: [
         ["Akoni","Ema","Hone","Iona","Keli","Lala","Moke","Nolo","Olana","Pena","Ulana","Wale"],
@@ -459,7 +459,7 @@ DesignationSystem.centralPacific = new DesignationSystem({
 });
 
 DesignationSystem.westernPacific = new DesignationSystem({
-    displayName: 'Western Pacific',
+    displayName: 'Northwestern Pacific',
     suffix: 'W',
     mainLists: [    // names marked with empty comments are retired and will be replaced when replacement names are announced
         ["Damrey","Haikui"/**/,"Kirogi","Yun-yeung","Koinu","Bolaven","Sanba","Jelawat","Ewiniar","Maliksi","Gaemi","Prapiroon","Maria","Son-Tinh","Ampil","Wukong","Jongdari","Shanshan","Yagi","Leepi","Bebinca","Pulasan","Soulik","Cimaron","Jebi","Krathon","Barijat","Trami"],
@@ -548,7 +548,7 @@ DesignationSystem.northIndianOcean = new DesignationSystem({
 });
 
 DesignationSystem.southWestIndianOcean = new DesignationSystem({
-    displayName: 'Southwest Indian Ocean',
+    displayName: 'South-West Indian Ocean',
     suffix: 'R',
     annual: true,
     anchor: 2017,
@@ -560,7 +560,7 @@ DesignationSystem.southWestIndianOcean = new DesignationSystem({
 });
 
 DesignationSystem.southPacific = new DesignationSystem({
-    displayName: 'South Pacific',
+    displayName: 'Southwest Pacific',
     suffix: 'F',
     mainLists: [
         ['Aru','Bina','Carol','Dovi','Eva','Fili','Gina','Hale','Irene','Josese','Kirio','Lola','Mal','Nat','Osai','Pita','Rae','Seru','Tam','Urmil','Vaianu','Wati','Xavier','Yani','Zita'],
@@ -597,7 +597,7 @@ DesignationSystem.mediterranean = new DesignationSystem({
 });
 
 DesignationSystem.atlantic1950 = new DesignationSystem({
-    displayName: 'Atlantic (1950-52)',
+    displayName: 'North Atlantic (1950-52)',
     suffix: 'L',
     annual: true,
     anchor: 1950,
@@ -607,7 +607,7 @@ DesignationSystem.atlantic1950 = new DesignationSystem({
 });
 
 DesignationSystem.atlantic1953 = new DesignationSystem({
-    displayName: 'Atlantic (1953-59)',
+    displayName: 'North Atlantic (1953-59)',
     suffix: 'L',
     annual: true,
     anchor: 1953,
@@ -623,7 +623,7 @@ DesignationSystem.atlantic1953 = new DesignationSystem({
 });
 
 DesignationSystem.atlantic1960 = new DesignationSystem({
-    displayName: 'Atlantic (1960-63)',
+    displayName: 'North Atlantic (1960-63)',
     suffix: 'L',
     annual: true,
     anchor: 1960,
@@ -636,7 +636,7 @@ DesignationSystem.atlantic1960 = new DesignationSystem({
 });
 
 DesignationSystem.atlantic1972 = new DesignationSystem({
-    displayName: 'Atlantic (1972-78)',
+    displayName: 'North Atlantic (1972-78)',
     suffix: 'L',
     annual: true,
     anchor: 1972,
@@ -652,7 +652,7 @@ DesignationSystem.atlantic1972 = new DesignationSystem({
 });
 
 DesignationSystem.atlantic1979 = new DesignationSystem({
-    displayName: 'Atlantic (1979-84)',
+    displayName: 'North Atlantic (1979-84)',
     suffix: 'L',
     annual: true,
     anchor: 1979,
@@ -670,7 +670,7 @@ DesignationSystem.atlantic1979 = new DesignationSystem({
 });
 
 DesignationSystem.easternPacific1960 = new DesignationSystem({
-    displayName: 'Eastern Pacific (1960-65)',
+    displayName: 'Northeastern Pacific (1960-65)',
     suffix: 'E',
     mainLists: [
         ['Annette', 'Bonny', 'Celeste', 'Diana', 'Estelle', 'Fernanda', 'Gwen', 'Hyacinth', 'Iva', 'Joanne', 'Kathleen', 'Liza', 'Madeline', 'Naomi', 'Orla', 'Pauline', 'Rebecca', 'Simone', 'Tara', 'Valerie', 'Willa'],
@@ -679,7 +679,7 @@ DesignationSystem.easternPacific1960 = new DesignationSystem({
 });
 
 DesignationSystem.easternPacific1965 = new DesignationSystem({
-    displayName: 'Eastern Pacific (1965-68)',
+    displayName: 'Northeastern Pacific (1965-68)',
     suffix: 'E',
     annual: true,
     anchor: 1965,
@@ -693,7 +693,7 @@ DesignationSystem.easternPacific1965 = new DesignationSystem({
 
 // original four-year rotation of male/female EPac names
 DesignationSystem.easternPacific1978 = new DesignationSystem({
-    displayName: 'Eastern Pacific (1978-81)',
+    displayName: 'Northeastern Pacific (1978-81)',
     suffix: 'E',
     annual: true,
     anchor: 1978,
@@ -710,7 +710,7 @@ DesignationSystem.easternPacific1978 = new DesignationSystem({
 
 // modern six-year rotation of male/female EPac names (overlaps with previous four-year rotation)
 DesignationSystem.easternPacific1979 = new DesignationSystem({
-    displayName: 'Eastern Pacific (1979-84)',
+    displayName: 'Northeastern Pacific (1979-84)',
     suffix: 'E',
     annual: true, 
     anchor: 1979,
