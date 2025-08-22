@@ -11,9 +11,13 @@ const SAVE_FORMAT = 7;  // Format #7 in use starting in v0.4
 const EARLIEST_COMPATIBLE_FORMAT = 0;
 const ENVDATA_COMPATIBLE_FORMAT = 0;
 
-const WIDTH = 960; // 16:9 aspect ratio
-const HEIGHT = 540;
-const DIAMETER = 20;    // Storm icon diameter
+let WIDTH = window.innerWidth;
+let HEIGHT = WIDTH * (9 / 16);
+if (HEIGHT > window.innerHeight) {
+    HEIGHT = window.innerHeight;
+    WIDTH = HEIGHT * (16 / 9);
+}
+const DIAMETER = 40;       // Storm icon diameter
 const PERLIN_ZOOM = 100;    // Resolution for perlin noise
 const TICK_DURATION = 3600000;  // How long in sim time does a tick last in milliseconds (1 hour)
 const ADVISORY_TICKS = 6;    // Number of ticks per advisory
@@ -381,3 +385,4 @@ function defineColors(){    // Since p5 color() function doesn't work until setu
     COLORS.UI.input = color(255);
     COLORS.UI.loadingSymbol = color(0,40,85);
 }
+
