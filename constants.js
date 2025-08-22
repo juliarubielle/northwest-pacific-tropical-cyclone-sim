@@ -11,7 +11,7 @@ const SAVE_FORMAT = 7;  // Format #7 in use starting in v0.4
 const EARLIEST_COMPATIBLE_FORMAT = 0;
 const ENVDATA_COMPATIBLE_FORMAT = 0;
 
-const WIDTH = 960;
+const WIDTH = 960; // 16:9 aspect ratio
 const HEIGHT = 540;
 const DIAMETER = 20;    // Storm icon diameter
 const PERLIN_ZOOM = 100;    // Resolution for perlin noise
@@ -133,7 +133,7 @@ const MAP_TYPES = [     // Land generation controls and option presets for diffe
         }
     },
     {   
-		label: "North Atlantic",
+		label: "Atlantic",
         form: 'earth',
         west: -102.67,
         east: 3,
@@ -147,7 +147,7 @@ const MAP_TYPES = [     // Land generation controls and option presets for diffe
         }
     },
     {   
-		label: "Northeast Pacific",
+		label: "Eastern Pacific",
         form: 'earth',
         west: -180,
         east: -74.33,
@@ -161,7 +161,7 @@ const MAP_TYPES = [     // Land generation controls and option presets for diffe
         }
     },
     {   
-		label: "Northwest Pacific",
+		label: "Western Pacific",
         form: 'earth',
         west: 94.42,
         east: -159.91,
@@ -175,7 +175,7 @@ const MAP_TYPES = [     // Land generation controls and option presets for diffe
         }
     },
     {   
-		label: "North Indian Ocean",
+		label: "Northern Indian Ocean",
         form: 'earth',
         west: 25.95,
         east: 131.62,
@@ -203,7 +203,7 @@ const MAP_TYPES = [     // Land generation controls and option presets for diffe
         }
     },
     {   
-		label: "Southwest Pacific",
+		label: "South Pacific",
         form: 'earth',
         west: 147.2,
         east: -107.13,
