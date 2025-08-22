@@ -18,7 +18,7 @@ if (HEIGHT > window.innerHeight) {
     WIDTH = HEIGHT * (16 / 9);
 }
 const DIAMETER = 20;       // Storm icon diameter
-const PERLIN_ZOOM = 100;    // Resolution for perlin noise
+const PERLIN_ZOOM = 200;    // Resolution for perlin noise
 const TICK_DURATION = 3600000;  // How long in sim time does a tick last in milliseconds (1 hour)
 const ADVISORY_TICKS = 6;    // Number of ticks per advisory
 const YEAR_LENGTH = 365.2425*24;        // The length of a year in ticks; used for seasonal activity
@@ -385,5 +385,6 @@ function defineColors(){    // Since p5 color() function doesn't work until setu
     COLORS.UI.input = color(255);
     COLORS.UI.loadingSymbol = color(0,40,85);
 }
+
 
 
